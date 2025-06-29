@@ -202,5 +202,66 @@ HAVING COUNT(DISTINCT DAYNAME(s.start_time)) = 7;
 
 
 ### 9. Which rooms had the fewest and most total seats?
+
+```sql
+WITH room_seat_counts AS (
+    SELECT 
+        r.id AS room_id,
+        r.name AS room_name,
+        COUNT(s.id) AS total_seats
+    FROM room r
+    JOIN seat s ON r.id = s.room_id
+    GROUP BY r.id, r.name
+)
+SELECT *
+FROM room_seat_counts
+WHERE total_seats = (
+    SELECT MIN(total_seats) FROM room_seat_counts
+)
+   OR total_seats = (
+    SELECT MAX(total_seats) FROM room_seat_counts
+)
+ORDER BY total_seats;
+```
+
+**Steps:**
+
+- Use a **CTE (room_seat_counts)** to:
+  - Join the `room` and `seat` tables on `room_id`
+  - Count the number of seats in each room using **COUNT(s.id)**
+  - Group by room to calculate the total seats per room
+- In the main query:
+  - Filter for rooms **where** `total_seats` is either:
+  - The minimum number of seats among all rooms, or
+  - The maximum number of seats among all rooms
+- Use **ORDER BY** `total_seats` to show the room with the fewest seats first
+  
+**Answer:**
+
+<img width="194" alt="Screenshot 2025-06-30 at 1 39 42 am" src="https://github.com/user-attachments/assets/25c6482c-7dba-49f3-98d5-2fc457ba05dc" />
+
+
 ### 10. Which films were screened more than 10 times?
 
+```sql
+SELECT 
+  f.name AS Film_name,
+  COUNT(s.id) AS Total_screenings
+FROM film f
+JOIN screening s ON f.id = s.film_id
+GROUP BY f.id, f.name
+HAVING COUNT(s.id) > 10
+ORDER BY total_screenings DESC;
+```
+
+**Steps:**
+
+- Use **JOIN** to connect the `film` table with the `screening` table using `film.id = screening.film_id`.
+- Use **COUNT(s.id)** to count how many screenings each film had.
+- Use **GROUP BY** `f.id`, `f.name` to count screenings per film.
+- Use **HAVING COUNT(s.id) > 10** to filter only films that were screened more than 10 times.
+- Use **ORDER BY** `total_screenings` **DESC** to sort the films from most to fewest screenings.
+  
+**Answer:**
+
+<img width="214" alt="Screenshot 2025-06-30 at 1 33 54 am" src="https://github.com/user-attachments/assets/cf58a88d-0f7a-4b2a-b91e-0e9d8bce2662" />
