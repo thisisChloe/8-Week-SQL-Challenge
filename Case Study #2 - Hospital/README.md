@@ -1,6 +1,7 @@
 # 🏥 Case Study #2: Hospital
 
-<img src="https://github.com/user-attachments/assets/1d601968-921c-422c-9e4d-d2021065a426" alt="Cinema" width="400"/>
+<img src="https://github.com/user-attachments/assets/78fc2b2b-b949-47ab-831b-2866386ce587" alt="ChatGPT Image" width="400"/>
+
 
 ## 📚 Table of Contents
 - [Business Task](#Business-Task)
@@ -12,7 +13,7 @@
 
 ## Entity Relationship Diagram
 
-![494825209_1610863942916040_4984041250756862577_n](https://github.com/user-attachments/assets/f846a887-5a52-4d83-92c3-a13593924f6c)
+<img src="https://github.com/user-attachments/assets/f846a887-5a52-4d83-92c3-a13593924f6c" alt="ERD Diagram" width="600"/>
 
 ## Questions and Solutions
 
