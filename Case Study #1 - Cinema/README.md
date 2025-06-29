@@ -119,7 +119,43 @@ HAVING COUNT(*) > 1;
 
 <img width="264" alt="Screenshot 2025-06-30 at 12 06 07 am" src="https://github.com/user-attachments/assets/05b1ce15-57fc-417d-ae75-df7559001505" />
 
-### 6. Who are the top 2 customers who spent the least total time in the cinema?
+### 6. List customers who spent the least total time in the cinema?
+
+```sql
+WITH customer_times AS (
+    SELECT 
+        c.first_name,
+        c.last_name,
+        SUM(f.length_min) AS total_watch_time
+    FROM customer c
+    JOIN booking b ON c.id = b.customer_id
+    JOIN screening s ON b.screening_id = s.id
+    JOIN film f ON s.film_id = f.id
+    GROUP BY c.id, c.first_name, c.last_name
+)
+SELECT first_name, last_name, total_watch_time
+FROM customer_times
+WHERE total_watch_time = (
+    SELECT MIN(total_watch_time) 
+    FROM customer_times
+)
+ORDER BY first_name, last_name;
+```
+
+**Steps:**
+
+- Use a **Common Table Expression (CTE)** named customer_times to:
+  - **Join** the `customer`, `booking`, `screening`, and `film` tables to relate each customer to the films they watched.
+  - Use **SUM(f.length_min)** to calculate the total number of minutes each customer spent watching films.
+  - **Group by** `customer ID` and `name` to calculate total time per customer.
+- In the main query, select customers whose `total_watch_time` is equal to the minimum total time in the CTE. This ensures that all customers with the least time spent are included, even in the case of a tie.
+- Use **ORDER BY** `first_name`, `last_name` for a clean, alphabetical result.
+
+**Answer:**
+
+<img width="252" alt="Screenshot 2025-06-30 at 1 28 19 am" src="https://github.com/user-attachments/assets/87ef1eab-2606-41d7-9353-70caf2ce0640" />
+
+
 ### 7. How many seats were booked for the film "Tom&Jerry"?
 
 ```sql
