@@ -11,5 +11,8 @@
 
 ## Entity Relationship Diagram
 <img width="600" alt="Cinema-Diagram" src="https://github.com/user-attachments/assets/907a1dda-b736-45f3-a766-8c4341b4636d" />
+
 ## Questions and Solutions
+
+
 **1. Show films that never had any bookings**
