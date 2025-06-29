@@ -4,8 +4,8 @@
 
 # 📚 Table of Contents
 - [Business Task](#Business-Task)
-- Entity Relationship Diagram
-- Questions and Solutions
+- [Entity Relationship Diagram](#Entity-Relationship-Diagram)
+- [Questions and Solutions](#Questions-and-Solution)
 
 # Business Task
 # Entity Relationship Diagram
