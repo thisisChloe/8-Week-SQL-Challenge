@@ -25,7 +25,7 @@ WHERE screening.id is NULL;
 ```
 
 **Steps:**
-- Use **LEFT JOIN** to return all records from the film table, and matching records from the screening table where film.id = screening.film_id.
+- Use **LEFT JOIN** to return all records from the `film` table, and matching records from the `screening` table where `film.id = screening.film_id`.
 If a film doesn't have a corresponding screening, the screening columns will be NULL.
 - Use **WHERE** to filter the results to only include films that do not have any screenings. In other words, it shows films that have never been scheduled for a screening.
 
