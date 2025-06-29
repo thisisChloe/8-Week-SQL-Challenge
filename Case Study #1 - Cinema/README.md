@@ -37,11 +37,33 @@ If a film doesn't have a corresponding screening, the `screening` columns will b
 
 <img width="153" alt="Screenshot 2025-06-29 at 11 56 16 pm" src="https://github.com/user-attachments/assets/b2475036-421e-473c-abb2-b2a95d778c71" />
 
-Film New doesn't have any bookings.
+- Film 'New' doesn't have any bookings.
 
 ### 3. Top 3 weekdays based on total bookings
 ### 4. Which film was screened in the most number of unique rooms?
 ### 5. Which customers booked more than one seat in one booking?
+
+```sql
+SELECT customer.first_name, customer.last_name, booking.id, COUNT(*)
+FROM reserved_seat
+JOIN booking ON reserved_seat.booking_id = booking.id
+JOIN customer ON booking.customer_id = customer.id
+GROUP BY booking.id, customer.first_name, customer.last_name
+HAVING COUNT(*) > 1;
+```
+
+**Steps:**
+
+- Use **SELECT** to retrieve the `customer’s name`, the `booking ID`, and the number of seats reserved in that booking by `COUNT(*)` to count how many seat records are linked to the booking (i.e. how many seats were reserved).
+- Use **JOIN** to connect each seat reservation to its related booking record and link the booking to the customer who made it.
+- Use **GROUP BY** to group results by each individual booking and customer. This ensures the count of seats is calculated per booking per customer.
+- Use **HAVING COUNT(*) > 1** to filter only those groups (bookings) where more than one seat was reserved. So it only shows customers who booked multiple seats in a single booking.
+
+
+**Answer:**
+
+<img width="264" alt="Screenshot 2025-06-30 at 12 06 07 am" src="https://github.com/user-attachments/assets/05b1ce15-57fc-417d-ae75-df7559001505" />
+
 ### 6. Who are the top 2 customers who spent the least total time in the cinema?
 ### 7. How many seats were booked for the film "Tom&Jerry"?
 ### 8. Which films were screened on all 7 days of the week?
