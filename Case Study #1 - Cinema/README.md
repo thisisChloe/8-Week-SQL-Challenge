@@ -9,6 +9,8 @@
 
 ## Business Task
 
+The cinema management team wants to use the database to answer key operational questions about customer behaviour and film performance. They're particularly interested in identifying which films are most popular, how often customers attend, which screenings are underbooked, and how efficiently cinema rooms are being utilised. These insights will help improve scheduling, maximise occupancy, and enhance the overall customer experience.
+
 ## Entity Relationship Diagram
 <img width="600" alt="Cinema-Diagram" src="https://github.com/user-attachments/assets/907a1dda-b736-45f3-a766-8c4341b4636d" />
 
