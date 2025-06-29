@@ -120,6 +120,12 @@ HAVING COUNT(DISTINCT DAYNAME(s.start_time)) = 7;
 
 **Steps:**
 
+- Use **JOIN** to combine the `film` and `screening` tables, allowing us to access each film’s screening dates.
+- Use **DAYNAME(s.start_time)** to extract the day of the week (e.g., Monday, Tuesday) from the `screening`’s start_time.
+- Use **COUNT(DISTINCT DAYNAME(...))** in the **HAVING** clause to count how many unique days of the week each film was screened on.
+- Filter using **HAVING = 7** to return only films that were shown on all 7 days of the week (Monday through Sunday).
+- Use **GROUP BY** `f.id`, `f.name` to group the screenings by each film so that the day-counting is done per film.
+  
 **Answer:**
 
 <img width="87" alt="Screenshot 2025-06-30 at 12 33 20 am" src="https://github.com/user-attachments/assets/a18f15d5-6dcb-4964-86a1-f7a628a819b9" />
