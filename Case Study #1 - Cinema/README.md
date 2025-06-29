@@ -65,6 +65,37 @@ If a film doesn't have a corresponding screening, the `screening` columns will b
 
 ### 3. Top 3 weekdays based on total bookings
 ### 4. Which film was screened in the most number of unique rooms?
+
+```sql
+WITH room_counts AS (
+    SELECT 
+        f.name AS Film_name,
+        COUNT(DISTINCT s.room_id) AS Unique_rooms
+    FROM film f
+    JOIN screening s ON f.id = s.film_id
+    GROUP BY f.id, f.name
+)
+SELECT *
+FROM room_counts
+WHERE unique_rooms = (
+    SELECT MAX(unique_rooms) 
+    FROM room_counts
+);
+```
+
+**Steps:**
+
+- Use a **CTE (room_counts)** to calculate how many distinct rooms each film was screened in:
+  - **Join** `film` with `screening` to associate each film with its screening rooms.
+  - Use **COUNT(DISTINCT s.room_id)** to count unique rooms per film.
+  - **Group by** `film ID` and `name` to get one row per film.
+- In the main query, use a subquery in the **WHERE** clause to select only those rows where the number of rooms equals the maximum number of rooms from the CTE. This ensures that films with tied maximum values are all returned.
+  
+**Answer:**
+
+<img width="191" alt="Screenshot 2025-06-30 at 1 21 41 am" src="https://github.com/user-attachments/assets/c3866ee3-06c5-4093-8195-c4db0275157f" />
+
+
 ### 5. Which customers booked more than one seat in one booking?
 
 ```sql
