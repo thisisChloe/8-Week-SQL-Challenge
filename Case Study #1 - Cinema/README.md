@@ -15,4 +15,14 @@
 ## Questions and Solutions
 
 
-**1. Show films that never had any bookings**
+**1. What is the booking rate for each film?**
+**2. Show films that never had any bookings**
+**3. Top 3 weekdays based on total bookings**
+**4. Which film was screened in the most number of unique rooms?**
+**5. Which customers booked more than one seat in one booking?**
+**6. Who are the top 2 customers who spent the least total time in the cinema?**
+**7. How many seats were booked for the film "Tom&Jerry"?**
+**8. Which films were screened on all 7 days of the week?**
+**9. Which rooms had the fewest and most total seats?**
+**10. Which films were screened more than 10 times?**
+
