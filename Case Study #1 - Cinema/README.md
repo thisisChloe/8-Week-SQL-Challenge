@@ -112,11 +112,14 @@ WHERE film.name = 'Tom&Jerry';
 <img width="80" alt="Screenshot 2025-06-30 at 12 13 59 am" src="https://github.com/user-attachments/assets/517fabd8-ce3b-44ae-a0cc-3561e9428f09" />
 
 ### 8. Which films were screened on all 7 days of the week?
+
+```sql
 SELECT f.name as Name
 FROM film f
 JOIN screening s ON f.id = s.film_id
 GROUP BY f.id, f.name
 HAVING COUNT(DISTINCT DAYNAME(s.start_time)) = 7;
+```
 
 **Steps:**
 
