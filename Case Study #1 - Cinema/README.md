@@ -63,7 +63,32 @@ If a film doesn't have a corresponding screening, the `screening` columns will b
 
 - Film 'New' doesn't have any bookings.
 
-### 3. Top 3 weekdays based on total bookings
+### 3. Show what seat that customer "Dung Nguyen" booked
+
+```sql
+SELECT 
+  s.row AS Seat_row, 
+  s.number AS Seat_number
+FROM customer c
+JOIN booking b ON c.id = b.customer_id
+JOIN reserved_seat rs ON b.id = rs.booking_id
+JOIN seat s ON rs.seat_id = s.id
+WHERE c.first_name = 'Dung' AND c.last_name = 'Nguyen'
+ORDER BY s.row, s.number;
+```
+
+**Steps:**
+
+- **JOIN** `customer` and `booking` to get all bookings made by `Dung Nguyen`.
+- **JOIN** `reserved_seat` to find which seats were reserved in those bookings.
+- **JOIN** `seat` to get seat details like `row` and `number`.
+- Filter using **WHERE** `c.first_name = 'Dung' AND c.last_name = 'Nguyen'`.
+- **ORDER BY** seat row and number for neat display.
+  
+**Answer:**
+
+<img width="150" alt="Screenshot 2025-06-30 at 1 44 11 am" src="https://github.com/user-attachments/assets/16df95c8-f251-4e05-a019-c9843db67fce" />
+
 ### 4. Which film was screened in the most number of unique rooms?
 
 ```sql
