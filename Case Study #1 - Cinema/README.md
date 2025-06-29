@@ -17,15 +17,21 @@
 
 ### 1. What is the booking rate for each film?
 
-
 ```sql
 SELECT name
 FROM film
 LEFT JOIN screening ON film.id=screening.film_id
 WHERE screening.id is NULL;
+```
+
+**Steps:**
+- Use **LEFT JOIN** to return all records from the film table, and matching records from the screening table where film.id = screening.film_id.
+If a film doesn't have a corresponding screening, the screening columns will be NULL.
+- Use **WHERE** to filter the results to only include films that do not have any screenings. In other words, it shows films that have never been scheduled for a screening.
 
 
 ### 2. Show films that never had any bookings
+
 ### 3. Top 3 weekdays based on total bookings
 ### 4. Which film was screened in the most number of unique rooms?
 ### 5. Which customers booked more than one seat in one booking?
