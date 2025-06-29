@@ -39,6 +39,7 @@ GROUP BY f.id, f.name;
 - Use **GROUP BY** on `f.id`, `f.name` to return one row per film with its calculated booking rate.
 
 **Answer:**
+
 <img width="190" alt="Screenshot 2025-06-30 at 12 38 03 am" src="https://github.com/user-attachments/assets/7f43ca9e-9f99-4b08-aba2-9e86f5f0b68f" />
 
 
