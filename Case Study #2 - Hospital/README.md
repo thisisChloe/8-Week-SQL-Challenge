@@ -38,15 +38,19 @@ JOIN card ca ON ca.customer_id = c.id;
 ### 2. Calculate the percentage of ACTIVE and INACTIVE accounts across the system.
 
 ```sql
-SELECT 'ACTIVE' AS `status`, count(*)*100/(select count(*) 
-					from account) as percentage
+SELECT 'ACTIVE' AS `status`, 
+	count(*)*100/(
+		select count(*) 
+        from account) as percentage
 FROM account 
 WHERE status = 'ACTIVE'
 
 UNION 
 
-SELECT 'INACTIVE' as `status`, count(*)*100/(select count(*) 
-					from account) as percentage
+SELECT 'INACTIVE' as `status`, 
+	count(*)*100/(
+		select count(*) 
+        from account) as percentage
 FROM account 
 WHERE status = 'INACTIVE';
 ```
