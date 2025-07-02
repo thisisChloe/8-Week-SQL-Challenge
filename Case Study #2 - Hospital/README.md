@@ -31,6 +31,7 @@ JOIN card ca ON ca.customer_id = c.id;
 - Use **JOIN** to find all card records where `card.customer_id` matches `customer.id`.
 
 **Answer:**
+
 <img width="725" alt="Screenshot 2025-07-02 at 5 13 59 pm" src="https://github.com/user-attachments/assets/ae187df5-291e-4027-9b7f-1cccaebcdf21" />
 
 
