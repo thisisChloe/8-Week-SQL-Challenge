@@ -4,6 +4,7 @@
 
 
 
+
 _“In the world of data, every row tells a story. Some rows lie.”_
 
 SQLNoir is more than just a clever name — it’s a genre of learning that blends narrative intrigue with technical challenge. Each case presents just enough of a storyline to draw you in, but never enough to give the answer away. You have to think like a detective — in SQL.
