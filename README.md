@@ -8,7 +8,7 @@ Welcome to my **SQL Challenge Portfolio**, where I solve real-world inspired cas
 
 Please find the solution links for the case studies below. Simply click on the links to access each solution.
 
-- 🎥 Case Study #1: Cinema
+- (🎥 Case Study #1: Cinema)[Case Study #1 - Cinema]
 
 Explore data behind customer behaviour and film performance in a cinema setting.  
 Key challenges include:
