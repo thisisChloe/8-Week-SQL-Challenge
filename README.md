@@ -1,6 +1,44 @@
-# 8-Week-SQL-Challenge
-This repository showcases my solutions to a series of SQL challenges, each designed to simulate real-world business scenarios. Through these exercises, I demonstrate my proficiency in crafting efficient SQL queries, performing data analysis, and solving complex problems. The projects highlight my ability to extract meaningful insights from structured datasets, reflecting my analytical thinking and technical skills.
-# 📚 Table of Contents
+# 🧠 SQL Challenge Portfolio
+
+Welcome to my **SQL Challenge Portfolio**, where I solve real-world inspired case studies using structured query language (SQL). This repository demonstrates my ability to extract insights, identify trends, and solve complex problems using SQL queries across diverse domains — from cinema bookings and hospital operations to narrative-based mystery cases.
+
+---
+
+## 📁 Case Studies
+
 Please find the solution links for the case studies below. Simply click on the links to access each solution.
-- Case Study #1:
-- Case Study #2:
+
+- 🎥 Case Study #1: Cinema
+
+Explore data behind customer behaviour and film performance in a cinema setting.  
+Key challenges include:
+- Calculating booking rates and occupancy
+- Identifying underutilised rooms
+- Investigating customer booking behaviour
+- Analysing film popularity across weekdays
+
+- 🏥 Case Study #2: Hospital
+
+A comprehensive look at healthcare data covering patients, doctors, departments, and payments.  
+Key analytical areas:
+- Appointment trends and revenue breakdowns
+- Department efficiency and doctor assignments
+- Payment method analysis and card usage
+
+- 🕵️‍♀️ SQLNoir: Solve Mysteries in the Shadows of the Database
+
+> *“In the world of data, every row tells a story. Some rows lie.”*
+
+**SQLNoir** is a genre-bending series of mystery-driven SQL challenges where each query feels like uncovering a plot twist. I completed both the Beginner and Intermediate paths, tackling puzzles that tested my logic, creativity, and problem-solving skills in realistic, data-rich environments.
+
+## 🧰 Tools & Skills Applied
+
+- SQL (PostgreSQL / MySQL)
+- CTEs, JOINS, Subqueries, Aggregates, Grouping
+- Business scenario analysis
+- Process & performance metrics
+- Visual interpretation of query results
+- Data storytelling
+
+🎓 _Built with dedication to continuous learning and problem-solving._
+
