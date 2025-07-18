@@ -22,8 +22,7 @@ I completed both the Beginner and Intermediate cases and found myself genuinely 
 
 There were moments I genuinely grinned when a complex JOIN exposed the missing link, or when a layered condition in a subquery revealed a hidden pattern.
 
-![Uploading Screenshot 2025-07-18 at 4.13.55 pm.png…]()
-
+<img width="1304" height="543" alt="Screenshot 2025-07-18 at 4 13 55 pm" src="https://github.com/user-attachments/assets/aa00e7b7-4f2d-4627-ba8a-4cc298ee1b6c" />
 
 ## 💡 What Makes SQLNoir Different
 
