@@ -2,6 +2,8 @@
 
 <img width="1376" height="768" alt="1pTfvAzNVzld-Gz4spojWEQ" src="https://github.com/user-attachments/assets/4df8b6a4-b23a-4605-a294-383bd228b183" />
 
+
+
 _“In the world of data, every row tells a story. Some rows lie.”_
 
 SQLNoir is more than just a clever name — it’s a genre of learning that blends narrative intrigue with technical challenge. Each case presents just enough of a storyline to draw you in, but never enough to give the answer away. You have to think like a detective — in SQL.
@@ -19,6 +21,9 @@ I completed both the Beginner and Intermediate cases and found myself genuinely 
 - Re-frame problems when my first (or second) attempt led to misleading answers
 
 There were moments I genuinely grinned when a complex JOIN exposed the missing link, or when a layered condition in a subquery revealed a hidden pattern.
+
+![Uploading Screenshot 2025-07-18 at 4.13.55 pm.png…]()
+
 
 ## 💡 What Makes SQLNoir Different
 
