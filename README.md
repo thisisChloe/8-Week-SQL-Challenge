@@ -8,7 +8,7 @@ Welcome to my **SQL Challenge Portfolio**, where I solve real-world inspired cas
 
 Please find the solution links for the case studies below. Simply click on the links to access each solution.
 
-- [🎥 Case Study #1: Cinema](https://github.com/thisisChloe/SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Cinema)
+[🎥 Case Study #1: Cinema](https://github.com/thisisChloe/SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Cinema)
 
 Explore data behind customer behaviour and film performance in a cinema setting.  
 Key challenges include:
@@ -17,7 +17,7 @@ Key challenges include:
 - Investigating customer booking behaviour
 - Analysing film popularity across weekdays
 
-- 🏥 Case Study #2: Hospital
+[🏥 Case Study #2: Hospital](https://github.com/thisisChloe/SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Hospital)
 
 A comprehensive look at healthcare data covering patients, doctors, departments, and payments.  
 Key analytical areas:
@@ -25,7 +25,7 @@ Key analytical areas:
 - Department efficiency and doctor assignments
 - Payment method analysis and card usage
 
-- 🕵️‍♀️ SQLNoir: Solve Mysteries in the Shadows of the Database
+[🕵️‍♀️ SQLNoir: Solve Mysteries in the Shadows of the Database](https://github.com/thisisChloe/SQL-Challenge/tree/main/SQLNoir)
 
 > *“In the world of data, every row tells a story. Some rows lie.”*
 
