@@ -37,4 +37,4 @@ _Every JOIN reveals a truth._
 
 **Full Credit:**
 This post is inspired by and built from the incredible interactive experience at:
-👉 (SQLNoir.com)[https://www.sqlnoir.com/#]
+👉 [SQLNoir.com](https://www.sqlnoir.com/#)
