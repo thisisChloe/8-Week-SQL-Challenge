@@ -2,8 +2,6 @@
 
 Welcome to my **SQL Challenge Portfolio**, where I solve real-world inspired case studies using structured query language (SQL). This repository demonstrates my ability to extract insights, identify trends, and solve complex problems using SQL queries across diverse domains — from cinema bookings and hospital operations to narrative-based mystery cases.
 
----
-
 ## 📁 Case Studies
 
 Please find the solution links for the case studies below. Simply click on the links to access each solution.
