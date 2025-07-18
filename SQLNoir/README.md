@@ -30,11 +30,11 @@ There were moments I genuinely grinned when a complex JOIN exposed the missing l
 
 Some games teach. Some games entertain. SQLNoir does both.
 
-Every database hides a secret.
-Every row has a witness.
-Every JOIN reveals a truth.
+_Every database hides a secret._  
+_Every row has a witness._  
+_Every JOIN reveals a truth._  
 
 
-Full Credit:
+**Full Credit:**
 This post is inspired by and built from the incredible interactive experience at:
-👉 SQLNoir.com
+👉 (SQLNoir.com)[https://www.sqlnoir.com/#]
